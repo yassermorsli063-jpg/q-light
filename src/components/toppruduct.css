@@ -1,0 +1,121 @@
+.top-product {
+  padding: 32px 24px;
+  margin: 24px 16px;
+}
+
+.top-product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.top-product-badge-main {
+  margin: 0 0 8px;
+  display: inline-block;
+  color: #7c3aed;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.top-product-heading {
+  margin: 0;
+  font-size: 2rem;
+  color: #111827;
+}
+
+.top-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.top-product-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background: linear-gradient(135deg, #ffffff 0%, #f7f1ff 100%);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+  border: 1px solid rgba(192, 132, 252, 0.18);
+}
+
+.top-product-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.top-product-details {
+  padding: 24px;
+}
+
+.top-product-card-badge {
+  margin: 0 0 12px;
+  display: inline-block;
+  color: #7c3aed;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.top-product-title {
+  margin: 0 0 12px;
+  font-size: 1.4rem;
+  color: #111827;
+}
+
+.top-product-description {
+  margin: 0 0 18px;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.top-product-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.top-product-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.top-product-button {
+  border: none;
+  background: #7c3aed;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.top-product-button:hover {
+  background: #6d28d9;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .top-product {
+    padding: 20px 14px;
+    margin: 18px 12px;
+  }
+
+  .top-product-heading {
+    font-size: 1.7rem;
+  }
+
+  .top-product-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

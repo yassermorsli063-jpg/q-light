@@ -1,0 +1,160 @@
+
+body {  margin: 0;
+  font-family: Arial, sans-serif;
+  background:
+    linear-gradient(rgba(8, 8, 8, 0.58), rgba(8, 8, 8, 0.7)),
+    url('./assets/ChatGPT Image 7 سبتمبر 2026، 08_17_38 م.png') center center / cover fixed;
+  color: #ffffff;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  background:
+    linear-gradient(rgba(8, 8, 8, 0.58), rgba(8, 8, 8, 0.7)),
+    url('./assets/ChatGPT Image 7 سبتمبر 2026، 08_17_38 م.png') center center / cover fixed;
+}
+
+.home-page {
+  width: 100vw;
+  min-height: 100vh;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background:
+    linear-gradient(rgba(8, 8, 8, 0.42), rgba(8, 8, 8, 0.58)),
+    url('./assets/ChatGPT Image 7 سبتمبر 2026، 08_17_38 م.png') center center / cover no-repeat;
+  background-attachment: fixed;
+}
+
+.home-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+.django-dashboard-link {
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px 0;
+}
+
+.django-dashboard-link a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 12px 20px;
+  border: 1px solid rgba(212, 175, 55, 0.65);
+  border-radius: 10px;
+  background: rgba(8, 8, 8, 0.78);
+  color: #ffd700;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.django-dashboard-link a:hover {
+  background: #d4af37;
+  color: #080808;
+  transform: translateY(-2px);
+}
+
+.home-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 32px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.home-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: -0.03em;
+}
+
+.home-header p {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #475569;
+}
+
+.card-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.12);
+}
+
+.card h2 {
+  margin: 0 0 12px;
+  font-size: 1.25rem;
+}
+
+.card p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  margin-top: 18px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 640px) {
+  .App {
+    padding: 12px;
+  }
+
+  .home-container {
+    padding: 20px 16px;
+  }
+
+  .home-header h1 {
+    font-size: 2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}

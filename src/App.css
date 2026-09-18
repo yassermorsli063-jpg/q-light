@@ -1,38 +1,272 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --site-background-image: url("./assets/ChatGPT Image 7 سبتمبر 2026، 08_17_38 م.png");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
+body {
+  margin: 0;
+
+  background:
+    linear-gradient(rgba(5, 5, 5, 0.62), rgba(5, 5, 5, 0.72)),
+    var(--site-background-image) center / cover fixed;
+
+  color: #ffffff;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  overflow-x: hidden;
+}
+
+#root {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+}
+
+.App {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(rgba(5, 5, 5, 0.62), rgba(5, 5, 5, 0.72)),
+    var(--site-background-image) center / cover fixed;
+}
+
+
+
+.gold-text {
+  color: #d4af37;
+}
+
+.gold-gradient {
+  background:
+    linear-gradient(
+      90deg,
+      #8f6b12,
+      #d4af37,
+      #fff1a8,
+      #ffd700,
+      #b8860b
+    );
+
+ 
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.gold-button {
+  display: inline-flex;
+
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  padding: 13px 25px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #9b7310,
+      #d4af37,
+      #ffd700
+    );
+
+  color: #080808;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.gold-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 30px
+    rgba(212, 175, 55, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+.gold-border {
+  border: 1px solid rgba(212, 175, 55, 0.3);
+
+  transition: 0.3s ease;
+}
+
+.gold-border:hover {
+  border-color: #d4af37;
+
+  box-shadow:
+    0 0 25px
+    rgba(212, 175, 55, 0.12);
+}
+
+
+
+.page-container {
+  width: 100%;
+
+  max-width: 1680px;
+
+  margin: 0 auto;
+
+  padding: 60px 30px;
+
+  min-height: calc(100vh - 82px);
+}
+
+
+
+.page-title {
+  margin-bottom: 40px;
+
+  text-align: center;
+
+  font-size: 42px;
+
+  font-weight: 900;
+
+  letter-spacing: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #b8860b,
+      #d4af37,
+      #fff1a8,
+      #ffd700,
+      #b8860b
+    );
+
+
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.q-card {
+  background:
+    linear-gradient(
+      145deg,
+      #171717,
+      #0b0b0b
+    );
+
+  border: 1px solid rgba(212, 175, 55, 0.2);
+
+  border-radius: 18px;
+
+  padding: 25px;
+
+  transition: 0.3s ease;
+}
+
+.q-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #d4af37;
+
+  box-shadow:
+    0 15px 40px
+    rgba(0, 0, 0, 0.5),
+    0 0 25px
+    rgba(212, 175, 55, 0.08);
+}
+
+
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+@media (max-width: 700px) {
+  .page-container {
+    padding: 36px 16px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .page-title {
+    font-size: 32px;
+    letter-spacing: 1px;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8f6b12;
+
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+
+
+::selection {
+  background: #d4af37;
+
+  color: #050505;
+}
+
+
+
+@media (max-width: 700px) {
+
+  .page-container {
+    padding: 40px 18px;
+  }
+
+  .page-title {
+    font-size: 32px;
+  }
+}
+
+
+
+@media (max-width: 450px) {
+
+  .page-container {
+    padding: 30px 15px;
+  }
+
+  .page-title {
+    font-size: 27px;
   }
 }

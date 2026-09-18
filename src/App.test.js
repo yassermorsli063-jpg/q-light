@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('links the Luster Crystal category to the Luster Crystal page', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  const crystalLink = screen.getByRole('link', { name: /shop by luster crystal/i });
+  expect(crystalLink).toHaveAttribute('href', '/luster-crystal');
 });

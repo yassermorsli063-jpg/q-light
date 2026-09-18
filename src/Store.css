@@ -1,0 +1,132 @@
+.store-page {
+  max-width: 1200px;
+  margin: 44px auto;
+  padding: 32px;
+  background:
+    linear-gradient(rgba(238, 242, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    var(--site-background-image) center / cover fixed;
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.1);
+  color: #0f172a;
+}
+
+.store-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.store-header h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  letter-spacing: -0.02em;
+  color: #1e293b;
+}
+
+.store-header p {
+  margin-top: 14px;
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.75;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.store-card {
+  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+.store-image {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.store-card h2 {
+  margin: 24px 24px 12px;
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+.store-card p {
+  margin: 0 24px 28px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #475569;
+}
+
+.store-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 24px 24px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.store-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(37, 99, 235, 0.24);
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+}
+
+@media (max-width: 640px) {
+  .store-page {
+    margin: 24px 16px;
+    padding: 20px 16px;
+    border-radius: 20px;
+  }
+
+  .store-header h1 {
+    font-size: 2rem;
+  }
+
+  .store-image {
+    height: 240px;
+  }
+
+  .store-card h2,
+  .store-card p {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .store-button {
+    width: calc(100% - 36px);
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+}
+.store-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0 24px 24px;
+}
+
+.store-buy-button {
+  padding: 14px 28px;
+  background: #10b981;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.store-buy-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(16, 185, 129, 0.24);
+  background: #059669;
+}
